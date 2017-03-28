@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Model",
+	"category" : "Pharo-IRC-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"hostname",
+		"port",
+		"stream",
+		"incomingMessages",
+		"outgoingMessages",
+		"incomingSubscribers"
+	],
+	"name" : "IRCConnection",
+	"type" : "normal"
+}
