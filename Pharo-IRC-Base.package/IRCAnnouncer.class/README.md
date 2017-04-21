@@ -1,0 +1,1 @@
+I am a helper class to which UI and other components can subscribe to in order to listen to changes on an IRCConnection object.

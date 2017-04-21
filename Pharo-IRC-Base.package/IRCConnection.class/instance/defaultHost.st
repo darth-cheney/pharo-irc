@@ -1,0 +1,3 @@
+configuration
+defaultHost
+	^ 'localhost'.

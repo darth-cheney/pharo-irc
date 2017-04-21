@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposableModel",
+	"category" : "Pharo-IRC-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"textArea",
+		"title"
+	],
+	"name" : "IRCTranscriptLog",
+	"type" : "normal"
+}

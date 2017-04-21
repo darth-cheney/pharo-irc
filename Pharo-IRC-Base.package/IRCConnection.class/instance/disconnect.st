@@ -1,4 +1,6 @@
 connection open/close
 disconnect
-	"Closes the underlying SocketStream, if present."
-	stream ifNotNil: [ stream close ].
+	stream close.
+	self checkForIncoming.
+	self broadcast.
+	stream := nil.

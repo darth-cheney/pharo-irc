@@ -1,17 +1,20 @@
 {
-	"commentStamp" : "",
-	"super" : "Model",
+	"commentStamp" : "<historical>",
+	"super" : "Object",
 	"category" : "Pharo-IRC-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"hostname",
+		"host",
 		"port",
+		"nick",
 		"stream",
-		"incomingMessages",
-		"outgoingMessages",
-		"incomingSubscribers"
+		"userName",
+		"fullName",
+		"outgoingQueue",
+		"incomingQueue",
+		"announcer"
 	],
 	"name" : "IRCConnection",
 	"type" : "normal"

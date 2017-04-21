@@ -1,6 +1,5 @@
 testing
 isConnected
-	"Checks to see whether or not the stream is
-	 connected".
+	"Returns whether or not the underlying SocketStream connection is open"
 	stream ifNil: [ ^ false ].
-	^ stream isConnected
+	^ stream isConnected.
