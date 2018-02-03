@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "EricGade 4/21/2017 15:23",
+	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "Pharo-IRC-Base",
 	"classinstvars" : [ ],
@@ -10,8 +10,8 @@
 		"command",
 		"arguments",
 		"trailer",
-		"rawMessage"
+		"rawString"
 	],
-	"name" : "IRCSystemMessage",
+	"name" : "IRCProtocolMessage",
 	"type" : "normal"
 }
