@@ -6,7 +6,7 @@ initializeFromDictionary: aDictionary fromString: aSourceString
 	message."
 	
 	self initialize.
-	rawString _ aSourceString.
+	rawString := aSourceString.
 	self prefix: (aDictionary at: #prefix).
 	self command: (aDictionary at: #command).
 	self arguments: (aDictionary at: #arguments).

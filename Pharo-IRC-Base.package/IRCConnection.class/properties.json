@@ -16,7 +16,8 @@
 		"msgLog",
 		"userMode",
 		"nickname",
-		"fullName"
+		"fullName",
+		"announcer"
 	],
 	"name" : "IRCConnection",
 	"type" : "normal"

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "Pharo-IRC-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messages",
+		"type"
+	],
+	"name" : "IRCSystemMessageAnnouncement",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+initialization
+disconnect
+	connection := nil.
