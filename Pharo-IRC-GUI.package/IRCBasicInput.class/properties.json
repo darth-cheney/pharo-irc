@@ -6,9 +6,12 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"textArea",
-		"connection"
+		"logArea",
+		"name",
+		"input",
+		"logText",
+		"ann"
 	],
-	"name" : "IRCTranscript",
+	"name" : "IRCBasicInput",
 	"type" : "normal"
 }

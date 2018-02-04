@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "IRCBasicInput",
+	"category" : "Pharo-IRC-GUI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"users"
+	],
+	"name" : "IRCBasicChannelInput",
+	"type" : "normal"
+}
