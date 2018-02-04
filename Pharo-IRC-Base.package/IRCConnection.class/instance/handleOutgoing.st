@@ -4,6 +4,7 @@ handleOutgoing
 	send the string version across the socket.
 	Then announce to any subscribers."
 	| sentMessages |
+	outQueue ifEmpty: [ ^ self ].
 	sentMessages := OrderedCollection new.
 	outQueue do: [ :msg |
 		self connection isConnected ifTrue: [ 

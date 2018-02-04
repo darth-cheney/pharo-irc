@@ -7,3 +7,4 @@ processNextLine
 	msg := (IRCProtocolMessage fromString: (connection nextLine)).
 	inQueue add: msg.
 	msgLog add: msg.
+	self handleServerCommand: msg.

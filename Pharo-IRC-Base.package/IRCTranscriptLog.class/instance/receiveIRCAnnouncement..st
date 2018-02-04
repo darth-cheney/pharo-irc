@@ -1,10 +1,11 @@
 initialization
 receiveIRCAnnouncement: anAnnouncement
-	| stream |
-	stream := self textArea text writeStream.
-	stream setToEnd.
-	anAnnouncement messages do: [ :msg |
+	| newString |
+	newString := String streamContents: [ :stream |
 		stream
-			nextPut: Character cr; 
-			nextPutAll: (msg asString) ].
-	self textArea text: (stream contents).
+			nextPutAll: (self textArea text).
+		anAnnouncement messages do: [ :msg |
+			stream
+				nextPutAll: msg asString;
+				crlf ] ].
+	self textArea text: newString.

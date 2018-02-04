@@ -13,4 +13,4 @@ listen
 			Processor yield. 
 		]. 
 		self handleIncoming.
-	] forkAt: Processor lowestPriority.
+	] forkAt: Processor lowestPriority named: 'Pharo IRC'.
