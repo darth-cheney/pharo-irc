@@ -7,6 +7,5 @@ handleInput
 	(inputText beginsWith: '/')
 		ifTrue: [ 
 			self doCommand: inputText ]
-		ifFalse: [ 
-			self reportInvalidInput: inputText ].
+		ifFalse: [ self doNonCommandText: inputText ].
 	self input text: ''.

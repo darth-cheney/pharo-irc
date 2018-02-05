@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"users"
+		"users",
+		"channelName",
+		"chan"
 	],
 	"name" : "IRCBasicChannelInput",
 	"type" : "normal"

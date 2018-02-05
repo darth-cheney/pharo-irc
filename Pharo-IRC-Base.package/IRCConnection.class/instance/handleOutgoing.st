@@ -9,8 +9,8 @@ handleOutgoing
 	outQueue do: [ :msg |
 		self connection isConnected ifTrue: [ 
 			self connection sendCommand: msg asString.
-			sentMessages add: msg] ].
-	announcer announce: (IRCSystemMessageAnnouncement new messages: sentMessages; type: #outgoing).
+			sentMessages add: msg.
+			announcer announce: (IRCMessageAnnouncement new message: msg) ] ].
 	
 	"Flush any messages that were actually sent"
 	sentMessages do: [ :msg | outQueue remove: msg ].

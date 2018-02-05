@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"messages",
-		"type"
+		"channel"
 	],
-	"name" : "IRCSystemMessageAnnouncement",
+	"name" : "IRCJoinedChannelAnnouncement",
 	"type" : "normal"
 }

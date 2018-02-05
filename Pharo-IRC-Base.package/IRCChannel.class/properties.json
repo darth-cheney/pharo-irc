@@ -4,15 +4,16 @@
 	"category" : "Pharo-IRC-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [
-		"prefix",
-		"command",
-		"arguments",
-		"trailer",
-		"rawString",
-		"incoming"
+	"classvars" : [
+		"IncomingHandlers"
 	],
-	"name" : "IRCProtocolMessage",
+	"instvars" : [
+		"name",
+		"conn",
+		"users",
+		"msgLog",
+		"announcer"
+	],
+	"name" : "IRCChannel",
 	"type" : "normal"
 }

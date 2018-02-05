@@ -1,18 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "Announcement",
 	"category" : "Pharo-IRC-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"prefix",
-		"command",
-		"arguments",
-		"trailer",
-		"rawString",
-		"incoming"
+		"message"
 	],
-	"name" : "IRCProtocolMessage",
+	"name" : "IRCMessageAnnouncement",
 	"type" : "normal"
 }

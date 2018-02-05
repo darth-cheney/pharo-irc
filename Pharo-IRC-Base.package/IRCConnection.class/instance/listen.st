@@ -8,9 +8,9 @@ listen
 		self initialHandshake.
 		[ self isConnected ] whileTrue: [ 
 			self connection isDataAvailable ifTrue: [ self processNextLine ].
-			self handleIncoming.
 			self handleOutgoing.
 			Processor yield. 
 		]. 
-		self handleIncoming.
+		"TODO: Find some way to deal with data that is still
+		on the Socket once we've terminated the connection"
 	] forkAt: Processor lowestPriority named: 'Pharo IRC'.

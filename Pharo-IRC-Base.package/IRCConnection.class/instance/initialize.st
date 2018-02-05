@@ -13,8 +13,9 @@ initialize
 	"We set up outgoing in incoming message queues
 	that will be flushed with each listen loop"
 	outQueue := OrderedCollection new.
-	inQueue := OrderedCollection new.
+	"inQueue := OrderedCollection new."
 	msgLog := OrderedCollection new.
+	channels := Dictionary new.
 	
 	"Initialize the subscribers dictionary of
 	collections"

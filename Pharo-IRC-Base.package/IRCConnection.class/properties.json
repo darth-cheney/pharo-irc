@@ -4,7 +4,9 @@
 	"category" : "Pharo-IRC-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"IncomingHandlers"
+	],
 	"instvars" : [
 		"connection",
 		"username",
@@ -12,11 +14,11 @@
 		"hostname",
 		"port",
 		"outQueue",
-		"inQueue",
 		"msgLog",
 		"userMode",
 		"nickname",
 		"fullName",
+		"channels",
 		"announcer"
 	],
 	"name" : "IRCConnection",

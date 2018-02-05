@@ -6,4 +6,6 @@ initialize
 
 	super initialize.
 	arguments := OrderedCollection new.
+	"By default, messages are NOT incoming"
+	incoming := false.
 	^ self.

@@ -10,7 +10,8 @@
 		"name",
 		"input",
 		"logText",
-		"ann"
+		"ann",
+		"conn"
 	],
 	"name" : "IRCBasicInput",
 	"type" : "normal"
