@@ -6,4 +6,5 @@ processNames: anIRCMessage
 		(aName = self connection nickname) not ].
 	self users addAll: userNames.
 	announcer announce: (IRCMessageAnnouncement new message: anIRCMessage).
+	announcer announce: (IRCChanInfoAnnouncement new channel: self).
 	

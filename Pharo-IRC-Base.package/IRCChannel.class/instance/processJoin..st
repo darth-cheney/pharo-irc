@@ -7,3 +7,4 @@ processJoin: anIRCMessage
 		ifTrue: [ userName := userName copyFrom: 1 to: (userName indexOf: $!) - 1 ].
 	users add: userName.
 	self announce: (IRCMessageAnnouncement new message: anIRCMessage).
+	self announce: (IRCChanInfoAnnouncement new channel: self).
