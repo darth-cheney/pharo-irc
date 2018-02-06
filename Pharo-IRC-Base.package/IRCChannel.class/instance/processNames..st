@@ -4,6 +4,8 @@ processNames: anIRCMessage
 	| userNames |
 	userNames := (anIRCMessage trailer splitOn: $ ) select: [ :aName |
 		(aName = self connection nickname) not ].
+	userNames := userNames collect: [ :uname | 
+		(IRCUser nicknamed: uname)].
 	self users addAll: userNames.
 	announcer announce: (IRCMessageAnnouncement new message: anIRCMessage).
 	announcer announce: (IRCChanInfoAnnouncement new channel: self).

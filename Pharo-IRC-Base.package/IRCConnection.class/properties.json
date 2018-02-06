@@ -9,17 +9,15 @@
 	],
 	"instvars" : [
 		"connection",
-		"username",
 		"password",
 		"hostname",
 		"port",
 		"outQueue",
 		"msgLog",
 		"userMode",
-		"nickname",
-		"fullName",
 		"channels",
-		"announcer"
+		"announcer",
+		"user"
 	],
 	"name" : "IRCConnection",
 	"type" : "normal"

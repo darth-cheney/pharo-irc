@@ -11,11 +11,17 @@ extractPrefixAndCommandFrom: aString
 		prefix := command copyFrom: 2 to: (command size).
 		command := stream upTo: $ ].
 	arguments := stream upTo: $:.
-	stream atEnd ifFalse: [
-		trailer := stream upToEnd].
+	stream atEnd 
+		ifFalse: [
+			trailer := stream upToEnd].
+	"If the string ends with $:,
+	we need to add it to the arguments"
+	(aString last = $:)
+		ifTrue: [ 
+			arguments := arguments,':' ].
 
 	^ Dictionary newFrom: {
 		#prefix -> prefix.
 		#command -> command.
 		#arguments -> arguments.
-		#trailer -> trailer }.
+		#trailer -> trailer }.     

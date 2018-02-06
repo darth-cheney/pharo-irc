@@ -7,6 +7,8 @@ setupIncomingHandlers
 	^ { 
 		"When a user joins the chan"
 		#JOIN -> #processJoin:.
+		"When a user leaves a chan"
+		#PART -> #processPart:.
 		"Handle incoming NAMES response"
 		'353' -> #processNames:.
 		 } asDictionary.

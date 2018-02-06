@@ -4,9 +4,11 @@ asString
 	a correct RFC compliant message string"
 	| stream |
 	stream := String new writeStream.
-	prefix ifNotNil: [ stream nextPutAll: prefix ].
+	prefix ifNotNil: [ stream
+								nextPut: $:; 
+								nextPutAll: prefix;
+								nextPut: $  ].
 	command ifNotNil: [ stream 
-							nextPut: $ ;
 							nextPutAll: command ].
 	arguments ifNotEmpty: [
 		arguments do: [ :arg |

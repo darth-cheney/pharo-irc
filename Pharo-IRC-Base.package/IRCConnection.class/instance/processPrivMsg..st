@@ -15,7 +15,4 @@ processPrivMsg: anIRCMessage
 			^ self sendMessage: anIRCMessage toChannel: channel ].
 	(recipient asLowercase = self nickname asLowercase
 		or: [ sender isNil ])
-			ifTrue: [ 
-				channels do: [ :chan |
-					self sendMessage: anIRCMessage toChannel: chan ]
-			 ].
+			ifTrue: [ self sendMessageToAllChans: anIRCMessage ].

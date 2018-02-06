@@ -1,15 +1,16 @@
 {
 	"commentStamp" : "",
-	"super" : "Announcement",
+	"super" : "Object",
 	"category" : "Pharo-IRC-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"channel",
-		"user",
-		"message"
+		"username",
+		"nickname",
+		"fullName",
+		"password"
 	],
-	"name" : "IRCJoinedChannelAnnouncement",
+	"name" : "IRCUser",
 	"type" : "normal"
 }

@@ -1,3 +1,3 @@
 initialization
 username: aString
-	username := aString
+	user username: aString.

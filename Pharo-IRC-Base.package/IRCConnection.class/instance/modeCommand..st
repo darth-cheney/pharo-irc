@@ -14,4 +14,4 @@ modeCommand: aTwoCharString
 	self
 		sendMessage: (IRCProtocolMessage new
 							command: 'MODE'
-							arguments: { nickname. aTwoCharString }).
+							arguments: { user nickname. aTwoCharString }).

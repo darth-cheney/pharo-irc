@@ -9,6 +9,14 @@ processIncoming: anIRCMessage
 		ifTrue: [ 
 			self printIncomingMsg: anIRCMessage.
 			^ self ].
+	(anIRCMessage command = #PART)
+		ifTrue: [ 
+			self printUserLeft: anIRCMessage.
+			^ self ].
+	(anIRCMessage command = #JOIN)
+		ifTrue: [ 
+			self printUserJoined: anIRCMessage.
+			^ self ].
 	newString := String streamContents: [ :stream |
 		stream
 			nextPutAll: (anIRCMessage asString);

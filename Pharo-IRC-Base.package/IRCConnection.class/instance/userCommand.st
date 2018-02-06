@@ -8,5 +8,5 @@ userCommand
 	self
 		sendMessage: (IRCProtocolMessage new
 							command: 'USER'
-							arguments: { username. '8'. '*' }
-							trailer: fullName).
+							arguments: { user username. '8'. '*' }
+							trailer: user fullName).

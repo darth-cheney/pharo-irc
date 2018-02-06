@@ -7,4 +7,4 @@ operCommand: aPassword
 	self
 		sendMessage: (IRCProtocolMessage new
 							command: 'OPER'
-							arguments: { username. aPassword }).
+							arguments: { user username. aPassword }).

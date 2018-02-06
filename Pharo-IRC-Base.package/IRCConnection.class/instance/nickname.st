@@ -1,3 +1,3 @@
 initialization
 nickname
-	^ nickname
+	^ user nickname

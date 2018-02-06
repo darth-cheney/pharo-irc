@@ -5,6 +5,6 @@ processJoin: anIRCMessage
 	userName := anIRCMessage prefix.
 	(userName includes: $!)
 		ifTrue: [ userName := userName copyFrom: 1 to: (userName indexOf: $!) - 1 ].
-	users add: userName.
+	users add: (IRCUser nicknamed: userName).
 	self announce: (IRCMessageAnnouncement new message: anIRCMessage).
 	self announce: (IRCChanInfoAnnouncement new channel: self).

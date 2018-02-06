@@ -13,9 +13,12 @@ setupIncomingHandlers
 		"When a user (including the current)
 		joins"
 		#JOIN -> #processJoin:.
+		"When some user leaves a
+		given channel"
+		#PART -> #processPart:.
 		"When a private message is sent,
 		either to the user or to a specific
-		channel".
+		channel"
 		#PRIVMSG -> #processPrivMsg:.
 		#NOTICE -> #processPrivMsg:.
 		"Channel Topic Stuff"

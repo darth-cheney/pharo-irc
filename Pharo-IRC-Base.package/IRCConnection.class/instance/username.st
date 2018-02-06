@@ -1,3 +1,3 @@
 initialization
 username
-	^ username
+	^ user username

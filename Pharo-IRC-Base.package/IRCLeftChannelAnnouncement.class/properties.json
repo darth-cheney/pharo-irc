@@ -10,6 +10,6 @@
 		"user",
 		"message"
 	],
-	"name" : "IRCJoinedChannelAnnouncement",
+	"name" : "IRCLeftChannelAnnouncement",
 	"type" : "normal"
 }
