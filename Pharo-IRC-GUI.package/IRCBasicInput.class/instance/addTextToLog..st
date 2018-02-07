@@ -1,5 +1,5 @@
 adding
 addTextToLog: aText
 	self logText: aText.
-	self logArea text: self logText.
-	self logArea sourceTextArea setScrollValue: (self logArea sourceTextArea extent).
+	self logArea textArea appendText: aText.
+	"self logArea sourceTextArea setScrollValue: (self logArea sourceTextArea extent)."
