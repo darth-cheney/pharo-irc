@@ -17,7 +17,8 @@
 		"userMode",
 		"channels",
 		"announcer",
-		"user"
+		"user",
+		"globalLog"
 	],
 	"name" : "IRCConnection",
 	"type" : "normal"

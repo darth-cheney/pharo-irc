@@ -8,6 +8,10 @@ initialize
 	hostname := 'irc.freenode.net'.
 	port := 6667.
 	
+	"Cache all messages the IRCMessageLogUtil
+	singleton log"
+	globalLog := true.
+	
 	"We set up outgoing in incoming message queues
 	that will be flushed with each listen loop"
 	outQueue := OrderedCollection new.
@@ -22,4 +26,5 @@ initialize
 		at: #incoming put: (OrderedCollection new)."
 	"Initialize the Announcer"
 	announcer := Announcer new.
+	self setupGlobalLog.
 	^ self.

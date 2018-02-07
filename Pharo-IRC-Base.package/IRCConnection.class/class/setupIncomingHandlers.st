@@ -24,6 +24,7 @@ setupIncomingHandlers
 		"Channel Topic Stuff"
 		'331' -> #processTopic:.
 		'332' -> #processTopic:.
+		'333' -> #processTopic:.
 		
 		"NAMES reply"
 		'353' -> #processNames:. } asDictionary.

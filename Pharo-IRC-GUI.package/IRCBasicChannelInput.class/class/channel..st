@@ -11,4 +11,8 @@ channel: anIRCChannel
 			when: IRCChanInfoAnnouncement 
 			send: #channelInfoUpdate:
 			to: inst.
+		anIRCChannel connection privAnnouncer
+			when: IRCQuitAnnouncement
+			send: #connectionQuit:
+			to: inst.
 		^ inst openWithSpec.

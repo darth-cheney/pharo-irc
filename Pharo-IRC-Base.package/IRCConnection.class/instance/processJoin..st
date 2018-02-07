@@ -5,14 +5,17 @@ processJoin: anIRCMessage
 	joining a given channel and other users
 	joining a channel in which the user is 
 	present"
-	| channelName user foundChan |
-	channelName := anIRCMessage arguments first.
-	user := anIRCMessage prefix.
+	| channelName userName foundChan |
+	(anIRCMessage arguments isNotEmpty)
+		ifTrue: [ channelName := anIRCMessage arguments first ]
+		ifFalse: [ channelName := anIRCMessage trailer ].
+
+	userName := anIRCMessage prefix.
 	
 	"Taken from squIRC #processJoin:"
-	(user includes: $!)
+	(userName includes: $!)
 		ifTrue: [ 
-			user := user copyFrom: 1 to: (user indexOf: $!) - 1 ].
+			userName := userName copyFrom: 1 to: (userName indexOf: $!) - 1 ].
 	foundChan := channels at: channelName ifAbsent: [ nil ].
 	foundChan
 		ifNotNil: [ 
@@ -20,7 +23,7 @@ processJoin: anIRCMessage
 			^ self ].
 	"If the JOIN message refers to the current user,
 	we need to create a new channel"
-	(user = self nickname)
+	(userName = self nickname)
 		ifTrue: [ 
 			self addChannelNamed: channelName ].
 	

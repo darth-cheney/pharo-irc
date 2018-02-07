@@ -17,6 +17,16 @@ processIncoming: anIRCMessage
 		ifTrue: [ 
 			self printUserJoined: anIRCMessage.
 			^ self ].
+	(anIRCMessage command = #QUIT)
+		ifTrue: [ 
+			self printUserQuit: anIRCMessage.
+			^ self ].
+	(self chanInfoCommands includes: (anIRCMessage command))
+		ifTrue: [ 
+			self processChanInfoCommand: anIRCMessage.
+			^ self ].
+	(self commandsToIgnore includes: (anIRCMessage command))
+		ifTrue: [ ^ self ].
 	newString := String streamContents: [ :stream |
 		stream
 			nextPutAll: (anIRCMessage asString);

@@ -13,4 +13,4 @@ listen
 		]. 
 		"TODO: Find some way to deal with data that is still
 		on the Socket once we've terminated the connection"
-	] forkAt: Processor lowestPriority named: 'Pharo IRC'.
+	] forkNamed: 'Pharo IRC'.
