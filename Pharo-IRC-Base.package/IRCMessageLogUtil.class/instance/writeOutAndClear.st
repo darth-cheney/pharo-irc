@@ -1,7 +1,7 @@
 writing
 writeOutAndClear
 	| stream |
-	stream := FileStream oldFileNamed: 'ircMsgLog.txt'.
+	stream := self logFile writeStream.
 	stream upToEnd.
 	self messages do: [ :msg |
 		stream

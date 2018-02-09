@@ -1,6 +1,6 @@
 adding
 addMessage: anIRCMessage
-	(messageLog size > 1000)
+	(messageLog size > 500)
 		ifTrue: [ 
 			self writeOutAndClear ].
 	messageLog add: anIRCMessage

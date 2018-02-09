@@ -1,14 +1,15 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Pharo-IRC-Base",
+	"category" : "Pharo-IRC-Base-Util",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [
 		"uniqueInstance"
 	],
 	"instvars" : [
-		"messageLog"
+		"messageLog",
+		"logFileReference"
 	],
 	"name" : "IRCMessageLogUtil",
 	"type" : "normal"

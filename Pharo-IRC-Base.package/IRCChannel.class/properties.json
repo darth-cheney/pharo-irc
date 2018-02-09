@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Pharo-IRC-Base",
+	"category" : "Pharo-IRC-Base-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LabelMorph",
+	"category" : "Pharo-IRC-GUI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "IRCInfoMorph",
+	"type" : "normal"
+}

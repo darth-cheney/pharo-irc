@@ -22,5 +22,6 @@ handleJoinChannel: anAnnouncement
 		contents: chanInput buildWithSpec.
 	self channelTabs addTab: newTab.
 	newTab selected: true.
+	chanInput input textArea keyboardFocusChange: true.
 	
 	

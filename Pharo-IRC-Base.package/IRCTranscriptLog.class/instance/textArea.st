@@ -1,3 +1,0 @@
-initialization
-textArea
-	^ textArea.

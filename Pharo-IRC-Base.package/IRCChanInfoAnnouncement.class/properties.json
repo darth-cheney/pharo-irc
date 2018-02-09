@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Announcement",
-	"category" : "Pharo-IRC-Base",
+	"category" : "Pharo-IRC-Base-Events",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
