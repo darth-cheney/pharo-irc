@@ -12,11 +12,11 @@ privMsgExamples
 ':B0g4r7_!~B0g4r7@199.87.197.61 PRIVMSG ##altcoins :nerdcore, yeah well, I meant that in a more abstract sense...'.
 ':ALowther!~alowther@70.126.224.181 PRIVMSG ##altcoins :.soaknow 1'.
 ':B0g4r7_!~B0g4r7@199.87.197.61 PRIVMSG ##altcoins :I''m saying that bitmain themselves possesses (or could make and possess) enough hashpower to pull it off.'.
-':Wallet!~Wallet@unaffiliated/bill48105/bot/wallet PRIVMSG ##altcoins :ALowther: | 0.00001 LTC | 1 DOGE | 0 XZC |'.
+':Wallet!~Wallet@unaffiliated/bill48105/bot/wallet PRIVMSG pharo-user :ALowther: | 0.00001 LTC | 1 DOGE | 0 XZC |'.
 ':booyah!~bb@193.25.1.157 PRIVMSG ##altcoins :B0g4r7_: or if they shut down the whole "computers" thing'.
 ':Microbe!sid6813@gateway/web/irccloud.com/x-ynjimxaxbwswyzqf PRIVMSG ##altcoins :The idea is solid, just the problem with power distribution'.
 ':xelra!~xelra@unaffiliated/xelra PRIVMSG ##altcoins :booyah: They''ve been discussing about how to handle Bitcoin and crypto in general this year in Davos, but mostly decided that it''s too early and they will discuss it next year again.'.
-':Mkll!Mkll@moz-7mb.sv1.155.165.IP PRIVMSG #firefox :https://www.ghacks.net/2018/02/07/here-is-what-is-new-and-changed-in-firefox-58-0-2/'.
+':Mkll!Mkll@moz-7mb.sv1.155.165.IP PRIVMSG pharo-user :https://www.ghacks.net/2018/02/07/here-is-what-is-new-and-changed-in-firefox-58-0-2/'.
 ':nerdcore!~mike@nerdcore.net PRIVMSG ##altcoins :it''s gonna be another great year for cryptoz!! ;)'.
 ':booyah!~bb@193.25.1.157 PRIVMSG ##altcoins :nerdcore: what problems it caused actually?'.
 ':ALowther!~alowther@70.126.224.181 PRIVMSG ##altcoins :.soak'.

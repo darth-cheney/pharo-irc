@@ -27,4 +27,5 @@ setupIncomingHandlers
 		'333' -> #processTopic:.
 		
 		"NAMES reply"
-		'353' -> #processNames:. } asDictionary.
+		'353' -> #processNameReply:.
+		'366' -> #processEndOfNames: } asDictionary.

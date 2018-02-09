@@ -8,7 +8,13 @@ processPart: anIRCMessage
 					ifAbsent: [ nil ].
 	chan
 		ifNotNil: [ 
-			^ self sendMessage: anIRCMessage toChannel: chan ].
+			self sendMessage: anIRCMessage toChannel: chan ].
 	
-	"As a fallback, announce on the connection"
-	announcer announce: (IRCMessageAnnouncement new message: anIRCMessage).
+	(self prefixIsNickname: anIRCMessage)
+		ifTrue: [ 
+			self leaveChannel: chan.
+			announcer announce:
+				(IRCPartChannelAnnouncement new 
+					message: anIRCMessage;
+					user: self user;
+					channel: chan) ].

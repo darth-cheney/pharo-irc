@@ -6,8 +6,7 @@ processPart: anIRCMessage
 	| foundName |
 	(self connection prefixIsNickname: anIRCMessage)
 		ifTrue: [ 
-			self connection leaveChannel: self.
-			^ announcer announce: (IRCLeftChannelAnnouncement new 
+			^ announcer announce: (IRCPartChannelAnnouncement new 
 											channel: self;
 											message: anIRCMessage;
 											user: self connection user) ].

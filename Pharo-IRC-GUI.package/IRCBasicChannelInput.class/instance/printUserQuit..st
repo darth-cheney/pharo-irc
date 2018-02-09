@@ -2,6 +2,7 @@ printing
 printUserQuit: anIRCMessage
 	| text userName |
 	userName := self channel connection nickFromPrefix: anIRCMessage.
+	userName ifNil: [ userName := self channel connection user nickname ].
 	text := (Character tab) asText.
 	text := text,(userName asText),(' has quit' asText).
 	anIRCMessage trailer ifNotNil: [ 

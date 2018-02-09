@@ -15,4 +15,4 @@ doNonCommandText: aText
 	"Show local version"
 	self
 		showChanMessage: aText
-		fromUserNamed: 'You'.
+		fromUserNamed: (self channel connection nickname).

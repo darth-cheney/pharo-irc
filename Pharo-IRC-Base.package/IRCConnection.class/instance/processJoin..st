@@ -5,27 +5,23 @@ processJoin: anIRCMessage
 	joining a given channel and other users
 	joining a channel in which the user is 
 	present"
-	| channelName userName foundChan |
+	| channelName |
+	
+	"Chan names can be the first argument or the trailer"
 	(anIRCMessage arguments isNotEmpty)
 		ifTrue: [ channelName := anIRCMessage arguments first ]
 		ifFalse: [ channelName := anIRCMessage trailer ].
-
-	userName := anIRCMessage prefix.
 	
-	"Taken from squIRC #processJoin:"
-	(userName includes: $!)
+	"If the nick referenced in the message is the
+	current user, we create a new channel and return"
+	(self prefixIsNickname: anIRCMessage)
 		ifTrue: [ 
-			userName := userName copyFrom: 1 to: (userName indexOf: $!) - 1 ].
-	foundChan := channels at: channelName ifAbsent: [ nil ].
-	foundChan
-		ifNotNil: [ 
-			self sendMessage: anIRCMessage toChannel: foundChan.
-			^ self ].
-	"If the JOIN message refers to the current user,
-	we need to create a new channel"
-	(userName = self nickname)
-		ifTrue: [ 
-			self addChannelNamed: channelName ].
-	
-	"Otherwise announce it on the main message announcer"
-	announcer announce: (IRCMessageAnnouncement new message: anIRCMessage).
+			| newChan |
+			newChan := IRCChannel connection: self named: channelName.
+			self addChannel: newChan.
+			announcer announce: (IRCJoinedChannelAnnouncement new 
+																			channel: newChan;
+																			message: anIRCMessage).
+			^ self sendMessage: anIRCMessage toChannelNamed: channelName ]
+		ifFalse: [ 
+			^ self sendMessage: anIRCMessage toChannelNamed: channelName ].

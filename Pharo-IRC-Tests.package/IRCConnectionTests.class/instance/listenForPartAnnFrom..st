@@ -4,6 +4,6 @@ listenForPartAnnFrom: anAnnouncer
 	to send #receiveLeftAnn: to the
 	receiver in cased of IRCLeftChannelAnnouncement"
 	anAnnouncer
-		when: IRCLeftChannelAnnouncement 
+		when: IRCPartChannelAnnouncement 
 		send: #receivePartAnn:
 		to: self

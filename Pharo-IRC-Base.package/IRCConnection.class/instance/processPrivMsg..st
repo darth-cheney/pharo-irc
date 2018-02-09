@@ -15,4 +15,6 @@ processPrivMsg: anIRCMessage
 			^ self sendMessage: anIRCMessage toChannel: channel ].
 	(recipient asLowercase = self nickname asLowercase
 		or: [ sender isNil ])
-			ifTrue: [ self sendMessageToAllChans: anIRCMessage ].
+			ifTrue: [ 
+				self sendMessageToAllChans: anIRCMessage.
+				announcer announce: (IRCMessageAnnouncement new message: anIRCMessage) ].

@@ -7,7 +7,7 @@ processQuit: anIRCMessage
 	| foundUsers nick |
 	nick := self connection nickFromPrefix: anIRCMessage.
 	foundUsers := self users select: [ :u |
-		u = nick ].
+		u nickname = nick ].
 	foundUsers ifNotNil: [ 
 		foundUsers do: [ :u | self users remove: u ].
 		self privAnnouncer announce: (IRCChanInfoAnnouncement new channel: self) ].

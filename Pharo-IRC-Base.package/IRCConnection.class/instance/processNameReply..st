@@ -1,6 +1,7 @@
 message-processing
-processNames: anIRCMessage
-	"Deal with a 353 NAMES reply list."
+processNameReply: anIRCMessage
+	"Deal with:
+	353 RPL_NAMEREPLY."
 	| chan |
 	chan := nil.
 	anIRCMessage arguments do: [ :arg |
@@ -10,7 +11,7 @@ processNames: anIRCMessage
 	].
 	chan ifNil: [ 
 		^ announcer announce: (IRCMessageAnnouncement new message: anIRCMessage) ].
-	chan incomingMessage: anIRCMessage.
+	self sendMessage: anIRCMessage toChannel: chan.
 	
 	
 	

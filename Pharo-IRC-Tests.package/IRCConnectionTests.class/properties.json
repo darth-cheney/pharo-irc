@@ -5,8 +5,15 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [
+		"EndOfNamesExamples",
+		"JoinMsgExamples",
+		"NameReplyExamples",
 		"NickMsgExamples",
-		"PrivMsgExamples"
+		"PartMsgExamples",
+		"PingMsgExamples",
+		"PrivMsgExamples",
+		"QuitMsgExamples",
+		"TopicMsgExamples"
 	],
 	"instvars" : [
 		"rcvdLogAnn",

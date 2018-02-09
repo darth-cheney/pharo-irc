@@ -10,6 +10,6 @@
 		"user",
 		"message"
 	],
-	"name" : "IRCLeftChannelAnnouncement",
+	"name" : "IRCPartChannelAnnouncement",
 	"type" : "normal"
 }

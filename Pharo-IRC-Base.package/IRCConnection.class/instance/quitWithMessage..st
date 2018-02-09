@@ -5,6 +5,6 @@ quitWithMessage: anIRCMessage
 	| ann |
 	ann := IRCQuitAnnouncement new message: anIRCMessage.
 	announcer announce: ann.
-	channels do: [ :chan |
-		chan privAnnouncer announce: ann ].
+	self sendMessageToAllChans: anIRCMessage.
+	self channels removeAll.
 	self disconnect.

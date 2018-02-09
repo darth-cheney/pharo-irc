@@ -1,4 +1,4 @@
 announcer handling
-receiveLeftAnn: anAnnouncement
+receivePartAnn: anAnnouncement
 	"Handler for IRCLeftChanAnnouncement"
 	rcvdPartAnn := anAnnouncement

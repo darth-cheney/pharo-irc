@@ -13,5 +13,7 @@ setupIncomingHandlers
 		#QUIT -> #processQuit:.
 		"Handle incoming NAMES response"
 		'353' -> #processNames:.
+		"Handle ENDOFNAMES"
+		'366' -> #processNames:.
 		 } asDictionary.
 		
