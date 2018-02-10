@@ -2,7 +2,7 @@ message-processing
 processNames: anIRCMessage
 	"Process a 353 names response message"
 	| userNames |
-	userNames := (anIRCMessage trailer splitOn: $ ) select: [ :aName |
+	userNames := (anIRCMessage trailer trimBoth splitOn: $ ) select: [ :aName |
 		(aName = self connection nickname) not ].
 	userNames := userNames collect: [ :uname | 
 		(IRCUser nicknamed: uname)].
