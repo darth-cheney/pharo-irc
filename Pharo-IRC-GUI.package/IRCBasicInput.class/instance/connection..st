@@ -1,3 +1,5 @@
 accessing structure variables
 connection: anIRCConnection
-	conn := anIRCConnection
+	conn := anIRCConnection.
+	formatter
+		ifNotNil: [ formatter connection: anIRCConnection ].

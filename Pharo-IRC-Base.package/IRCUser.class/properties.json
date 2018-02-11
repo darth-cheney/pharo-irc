@@ -9,7 +9,9 @@
 		"username",
 		"nickname",
 		"fullName",
-		"password"
+		"password",
+		"mode",
+		"chanModes"
 	],
 	"name" : "IRCUser",
 	"type" : "normal"

@@ -5,10 +5,10 @@ processIncoming: anIRCMessage
 	so that we can re-write messages from the
 	channel log."
 	| newString |
-	(anIRCMessage command = 'PRIVMSG')
+	"(anIRCMessage command = 'PRIVMSG')
 		ifTrue: [ 
 			self printIncomingMsg: anIRCMessage.
-			^ self ].
+			^ self ]."
 	(anIRCMessage command = #PART)
 		ifTrue: [ 
 			self printUserLeft: anIRCMessage.
@@ -27,8 +27,9 @@ processIncoming: anIRCMessage
 			^ self ].
 	(self commandsToIgnore includes: (anIRCMessage command))
 		ifTrue: [ ^ self ].
-	newString := String streamContents: [ :stream |
+	"newString := String streamContents: [ :stream |
 		stream
 			nextPutAll: (anIRCMessage asString);
-			crlf ].
+			crlf ]."
+	newString := self formatter formatMessage: anIRCMessage.
 	self addTextToLog: (newString asText).

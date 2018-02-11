@@ -6,6 +6,8 @@ setupIncomingHandlers
 	be sent to the connection in specific
 	cases."
 	^ { 
+		"Any NICK changes, including main user"
+		#NICK -> #processNick:.
 		"When a QUIT message comes in"
 		#QUIT -> #processQuit:.
 		"Handle a PING response"

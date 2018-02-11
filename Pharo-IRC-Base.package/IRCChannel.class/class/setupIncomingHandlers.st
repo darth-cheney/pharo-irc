@@ -11,9 +11,11 @@ setupIncomingHandlers
 		#PART -> #processPart:.
 		"When a user has quit"
 		#QUIT -> #processQuit:.
+		"Incoming NICK changes"
+		#NICK -> #processNick:.
 		"Handle incoming NAMES response"
 		'353' -> #processNames:.
 		"Handle ENDOFNAMES"
-		'366' -> #processNames:.
+		"'366' -> #processNames:".
 		 } asDictionary.
 		

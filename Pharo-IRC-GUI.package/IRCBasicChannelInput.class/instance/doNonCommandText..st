@@ -7,12 +7,14 @@ doNonCommandText: aText
 	| msg |
 	msg := IRCProtocolMessage new.
 	msg
+		prefix: (self channel connection nickname);
 		command: 'PRIVMSG';
 		arguments: { self channelName asString };
 		trailer: (aText asString).
 	self announceMessage: msg.
 	
 	"Show local version"
-	self
+	"self
 		showChanMessage: aText
-		fromUserNamed: (self channel connection nickname).
+		fromUserNamed: (self channel connection nickname)."
+	self addTextToLog: (self formatter formatMessage: msg).

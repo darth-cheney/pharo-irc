@@ -11,7 +11,8 @@
 		"input",
 		"logText",
 		"ann",
-		"conn"
+		"conn",
+		"formatter"
 	],
 	"name" : "IRCBasicInput",
 	"type" : "normal"

@@ -18,7 +18,8 @@
 		"channels",
 		"announcer",
 		"user",
-		"globalLog"
+		"globalLog",
+		"unprocessedMessages"
 	],
 	"name" : "IRCConnection",
 	"type" : "normal"

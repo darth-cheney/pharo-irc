@@ -6,7 +6,8 @@ handleJoinChannel: anAnnouncement
 	chanInput
 		addSubscriber: (anAnnouncement channel connection) on: #handleInputAnnouncement:;
 		channelName: (anAnnouncement channel name);
-		channel: (anAnnouncement channel).
+		channel: (anAnnouncement channel);
+		formatter: (IRCBasicTextFormatter new showOutbound: false).
 	anAnnouncement channel
 		addSubscriber: chanInput on: #handleIncoming:.
 	(anAnnouncement channel privAnnouncer)

@@ -17,6 +17,7 @@ initialize
 	outQueue := OrderedCollection new.
 	msgLog := OrderedCollection new.
 	channels := Dictionary new.
+	unprocessedMessages := OrderedCollection new.
 	
 	"Initialize the subscribers dictionary of
 	collections"

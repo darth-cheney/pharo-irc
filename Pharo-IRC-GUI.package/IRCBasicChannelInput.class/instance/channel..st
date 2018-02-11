@@ -3,4 +3,4 @@ channel: anIRCChannel
 	chan := anIRCChannel.
 	channelName := chan name.
 	self users items: (anIRCChannel users).
-	"self displayBackLog."
+	self connection: anIRCChannel connection.
