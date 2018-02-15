@@ -4,7 +4,9 @@
 	"category" : "Pharo-IRC-Base-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"NonAlphaNickModeMap"
+	],
 	"instvars" : [
 		"username",
 		"nickname",

@@ -8,4 +8,4 @@ removeChanMode: aModeString forChanNamed: aChannelName
 	(chanModes includesKey: aChannelName)
 		ifFalse: [ IRCUserNotInChannel signal ].
 	(chanModes at: aChannelName)
-		addAll: aModeString.
+		removeAll: aModeString.

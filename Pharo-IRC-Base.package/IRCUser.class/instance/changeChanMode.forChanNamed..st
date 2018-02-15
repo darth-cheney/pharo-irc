@@ -9,7 +9,7 @@ changeChanMode: aModeString forChanNamed: aChannelName
 		ifTrue: [ ^ self 
 						addChanMode: modeChars
 						forChanNamed: aChannelName  ].
-	(aModeString last = $-)
+	(aModeString first = $-)
 		ifTrue: [ ^ self
 						removeChanMode: modeChars
 						forChanNamed: aChannelName ].

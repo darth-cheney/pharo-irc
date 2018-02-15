@@ -7,11 +7,25 @@ testProcessNames
 	| examples |
 	examples := self parseExamples: self class nameReplyExamples.
 	examples do: [ :message |
-		| names channelNicks|
+		| names channelNicks |
 		names := message  trailer trimBoth splitOn: $ .
 		self listenForChanInfoAnnFrom: chan privAnnouncer.
 		self listenForMsgAnnFrom: chan privAnnouncer.
 		chan processNames: message.
+		"If any of the names begins with a symbol,
+		ensure that the mode was properly set and that
+		the symbol was trimmed from the nick"
+		names := names collect: [ :inName |
+			| trimmedNick char readStream |
+			readStream := ReadStream on: inName.
+			char := readStream next.
+			[ char isAlphaNumeric ]
+				whileFalse: [ char := readStream next ].
+			trimmedNick := (String streamContents: [ :s | 
+				s
+					nextPut: char;
+					nextPutAll: readStream upToEnd]). 
+			trimmedNick ].
 		channelNicks := chan users collect: [ :user |
 			user nickname].
 		self assert: (channelNicks includesAll: names).
