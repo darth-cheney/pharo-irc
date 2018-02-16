@@ -1,4 +1,4 @@
-removing
+irc-modes
 removeMode: aModeString
 	"Will remove the given characters,
 	corresponding to modes, from the user's

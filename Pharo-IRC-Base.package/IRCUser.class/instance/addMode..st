@@ -1,4 +1,4 @@
-adding
+irc-modes
 addMode: aModeString
 	"Will add each character of
 	the passed string to the current

@@ -1,4 +1,4 @@
-as yet unclassified
+irc-modes
 changeChanMode: aModeString forChanNamed: aChannelName
 	"Attempts to change the modestring for the
 	receiver on the given channel. If the user is

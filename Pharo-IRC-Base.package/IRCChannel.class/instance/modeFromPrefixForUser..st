@@ -1,4 +1,4 @@
-as yet unclassified
+irc-modes
 modeFromPrefixForUser: anIRCUser
 	"For a given IRCUser on this channel,
 	set the initial channel mode based on a symbol

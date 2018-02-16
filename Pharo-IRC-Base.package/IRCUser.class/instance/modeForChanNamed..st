@@ -1,4 +1,4 @@
-as yet unclassified
+irc-modes
 modeForChanNamed: aChannelName
 	"Attempt to respond with the mode set
 	for the user at the given channel name

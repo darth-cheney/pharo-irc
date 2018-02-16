@@ -1,3 +1,3 @@
-as yet unclassified
+irc-modes
 channelModes
 	^ chanModes

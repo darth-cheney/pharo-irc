@@ -1,4 +1,4 @@
-as yet unclassified
+irc-modes
 modeForChanNamed: aChannelName ifAbsent: aBlock
 	"Respond with the mode set for the user
 	on the specified channel in chanModes.

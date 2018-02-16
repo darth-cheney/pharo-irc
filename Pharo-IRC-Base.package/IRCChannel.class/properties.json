@@ -12,7 +12,8 @@
 		"conn",
 		"users",
 		"msgLog",
-		"announcer"
+		"announcer",
+		"mode"
 	],
 	"name" : "IRCChannel",
 	"type" : "normal"

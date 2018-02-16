@@ -1,4 +1,4 @@
-removing
+irc-modes
 removeChanMode: aModeString forChanNamed: aChannelName
 	"Will attempt to remove the given
 	mode(s) (as characters) from the receiver's

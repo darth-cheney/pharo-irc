@@ -1,4 +1,4 @@
-as yet unclassified
+irc-modes
 changeMode: aModeString
 	"Takes an incoming mode change
 	string (+r or -io, for example)
