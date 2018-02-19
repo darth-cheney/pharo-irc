@@ -30,4 +30,8 @@ setupIncomingHandlers
 		
 		"NAMES reply"
 		'353' -> #processNameReply:.
-		'366' -> #processEndOfNames: } asDictionary.
+		'366' -> #processEndOfNames:.
+		
+		"RPL_YOUREOPER"
+		'381' -> #processRplYoureOper:.
+		 } asDictionary.

@@ -21,7 +21,7 @@ processJoin: anIRCMessage
 			self addChannel: newChan.
 			announcer announce: (IRCJoinedChannelAnnouncement new 
 																			channel: newChan;
-																			message: anIRCMessage).
-			^ self sendMessage: anIRCMessage toChannelNamed: channelName ]
+																			message: anIRCMessage) 
+		]
 		ifFalse: [ 
 			^ self sendMessage: anIRCMessage toChannelNamed: channelName ].

@@ -6,4 +6,5 @@ initialize
 	msgLog := OrderedCollection new.
 	announcer := Announcer new.
 	mode := Set new.
+	active := false.
 	^ self

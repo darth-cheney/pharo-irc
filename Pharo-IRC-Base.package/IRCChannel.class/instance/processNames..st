@@ -8,7 +8,8 @@ processNames: anIRCMessage
 	"Add new users with the given nickname"
 	"userNames := userNames collect: [ :uname | 
 		(IRCUser nicknamed: uname)]."
-	newUsers := self getNewUsersFromNicks: userNames.
+	newUsers := userNames collect: [ :uname | 
+		(IRCUser nicknamed: uname)].
 	
 	"Check to see if the any of the new users
 	have nicks beginning with symbols. This indicates

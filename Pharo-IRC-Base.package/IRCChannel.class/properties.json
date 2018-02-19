@@ -13,7 +13,8 @@
 		"users",
 		"msgLog",
 		"announcer",
-		"mode"
+		"mode",
+		"active"
 	],
 	"name" : "IRCChannel",
 	"type" : "normal"
