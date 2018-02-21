@@ -5,4 +5,6 @@ initializeWidgets
 	input := self instantiate: TextInputFieldModel.
 	ann := Announcer new.
 	formatter := IRCBasicTextFormatter new.
+	cmdHandler := IRCTextCommandHandler new.
+	cmdHandler connection: self connection.
 	self input whenTextIsAccepted: [self handleInput].

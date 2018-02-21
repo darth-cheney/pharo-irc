@@ -5,3 +5,4 @@ initializeWidgets
 	users
 		displayBlock: [ :item |
 			item nickname ].
+	self commandHandler channel: self channel.
