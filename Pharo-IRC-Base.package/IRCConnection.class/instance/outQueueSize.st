@@ -1,0 +1,3 @@
+accessing
+outQueueSize
+	^ outQueue size.

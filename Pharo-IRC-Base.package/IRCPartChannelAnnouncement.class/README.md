@@ -1,0 +1,1 @@
+I am announced whenever a user has left a channel

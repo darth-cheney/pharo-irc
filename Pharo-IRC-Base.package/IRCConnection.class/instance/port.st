@@ -1,3 +1,3 @@
-accessing
+initialization
 port
-	^ port.
+	^ port

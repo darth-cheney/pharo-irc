@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "EricGade 2/23/2018 17:47",
+	"super" : "Object",
+	"category" : "Pharo-IRC-Base-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"prefix",
+		"command",
+		"arguments",
+		"trailer",
+		"rawString",
+		"incoming"
+	],
+	"name" : "IRCProtocolMessage",
+	"type" : "normal"
+}

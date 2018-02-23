@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "EricGade 2/23/2018 18:05",
+	"super" : "ComposableModel",
+	"category" : "Pharo-IRC-GUI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"logArea",
+		"name",
+		"input",
+		"logText",
+		"ann",
+		"conn",
+		"formatter",
+		"cmdHandler"
+	],
+	"name" : "IRCBasicInput",
+	"type" : "normal"
+}

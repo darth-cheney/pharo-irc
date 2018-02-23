@@ -1,6 +1,3 @@
-connection open/close
+initialization
 disconnect
-	stream close.
-	self checkForIncoming.
-	self broadcast.
-	stream := nil.
+	connection := nil.

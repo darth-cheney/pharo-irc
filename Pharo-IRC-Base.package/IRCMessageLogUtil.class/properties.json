@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "EricGade 2/23/2018 17:42",
+	"super" : "Object",
+	"category" : "Pharo-IRC-Base-Util",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"uniqueInstance"
+	],
+	"instvars" : [
+		"messageLog",
+		"logFileReference"
+	],
+	"name" : "IRCMessageLogUtil",
+	"type" : "normal"
+}

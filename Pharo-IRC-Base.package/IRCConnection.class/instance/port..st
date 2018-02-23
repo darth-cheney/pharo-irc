@@ -1,3 +1,3 @@
-accessing
+initialization
 port: aPortNum
-	port := aPortNum.
+	port := aPortNum

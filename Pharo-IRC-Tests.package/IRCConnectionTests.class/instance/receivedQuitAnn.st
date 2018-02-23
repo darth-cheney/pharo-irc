@@ -1,0 +1,3 @@
+announcer handling
+receivedQuitAnn
+	^ rcvdQuitAnn 

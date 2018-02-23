@@ -1,20 +1,25 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "EricGade 2/23/2018 17:29",
 	"super" : "Object",
-	"category" : "Pharo-IRC-Base",
+	"category" : "Pharo-IRC-Base-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"IncomingHandlers"
+	],
 	"instvars" : [
-		"host",
+		"connection",
+		"password",
+		"hostname",
 		"port",
-		"nick",
-		"stream",
-		"userName",
-		"fullName",
-		"outgoingQueue",
-		"incomingQueue",
-		"announcer"
+		"outQueue",
+		"msgLog",
+		"userMode",
+		"channels",
+		"announcer",
+		"user",
+		"globalLog",
+		"unprocessedMessages"
 	],
 	"name" : "IRCConnection",
 	"type" : "normal"

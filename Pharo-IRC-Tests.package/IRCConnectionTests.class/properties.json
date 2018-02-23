@@ -1,0 +1,29 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Pharo-IRC-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"EndOfNamesExamples",
+		"JoinMsgExamples",
+		"NameReplyExamples",
+		"NickMsgExamples",
+		"PartMsgExamples",
+		"PingMsgExamples",
+		"PrivMsgExamples",
+		"QuitMsgExamples",
+		"TopicMsgExamples"
+	],
+	"instvars" : [
+		"rcvdLogAnn",
+		"rcvdMsgAnn",
+		"rcvdJoinAnn",
+		"rcvdPartAnn",
+		"rcvdQuitAnn",
+		"conn",
+		"announcer"
+	],
+	"name" : "IRCConnectionTests",
+	"type" : "normal"
+}

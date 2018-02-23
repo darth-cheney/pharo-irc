@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "EricGade 2/23/2018 17:58",
+	"super" : "ComposableModel",
+	"category" : "Pharo-IRC-GUI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"channelTabs",
+		"serverLog",
+		"connection"
+	],
+	"name" : "IRCBasicDisplay",
+	"type" : "normal"
+}

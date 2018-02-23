@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "EricGade 2/23/2018 17:54",
+	"super" : "Object",
+	"category" : "Pharo-IRC-Base-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"NonAlphaNickModeMap"
+	],
+	"instvars" : [
+		"username",
+		"nickname",
+		"fullName",
+		"password",
+		"mode",
+		"chanModes"
+	],
+	"name" : "IRCUser",
+	"type" : "normal"
+}

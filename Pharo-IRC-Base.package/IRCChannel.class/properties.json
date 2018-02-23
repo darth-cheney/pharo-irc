@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "EricGade 2/23/2018 17:33",
+	"super" : "Object",
+	"category" : "Pharo-IRC-Base-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"IncomingHandlers"
+	],
+	"instvars" : [
+		"name",
+		"conn",
+		"users",
+		"msgLog",
+		"announcer",
+		"mode",
+		"active"
+	],
+	"name" : "IRCChannel",
+	"type" : "normal"
+}

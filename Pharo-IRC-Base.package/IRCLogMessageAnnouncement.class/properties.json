@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "EricGade 2/23/2018 17:37",
+	"super" : "Announcement",
+	"category" : "Pharo-IRC-Base-Events",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"message"
+	],
+	"name" : "IRCLogMessageAnnouncement",
+	"type" : "normal"
+}

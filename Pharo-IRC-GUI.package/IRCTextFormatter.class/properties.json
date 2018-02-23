@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "EricGade 2/10/2018 23:56",
+	"super" : "Object",
+	"category" : "Pharo-IRC-GUI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"conn"
+	],
+	"name" : "IRCTextFormatter",
+	"type" : "normal"
+}

@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Pharo-IRC-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"NameReplyExamples",
+		"PartExamples"
+	],
+	"instvars" : [
+		"rcvdMsgAnn",
+		"rcvdJoinAnn",
+		"rcvdPartAnn",
+		"rcvdQuitAnn",
+		"conn",
+		"announcer",
+		"chan",
+		"rcvdChanInfoAnn"
+	],
+	"name" : "IRCChannelTests",
+	"type" : "normal"
+}
