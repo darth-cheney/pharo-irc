@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "EricGade 2/23/2018 18:04",
 	"super" : "IRCBasicInput",
 	"category" : "Pharo-IRC-GUI",
 	"classinstvars" : [ ],

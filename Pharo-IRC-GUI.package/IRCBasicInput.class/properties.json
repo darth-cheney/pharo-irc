@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "EricGade 2/23/2018 18:05",
 	"super" : "ComposableModel",
 	"category" : "Pharo-IRC-GUI",
 	"classinstvars" : [ ],

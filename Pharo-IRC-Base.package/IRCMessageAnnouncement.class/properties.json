@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "EricGade 2/23/2018 17:39",
 	"super" : "Announcement",
 	"category" : "Pharo-IRC-Base-Events",
 	"classinstvars" : [ ],
