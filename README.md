@@ -3,7 +3,7 @@
   
 I am a full RFC 2812 compliant implementation of an IRC client.
   
-My reference version is the excellently designed [https://github.com/hpi-swa-teaching/squIRC](squIRC). Any design decisions that seem strange, ridiculous, idiotic, or even downright responsible in this repository are very likely my own.
+My reference version is the excellently designed [https://github.com/hpi-swa-teaching/squIRC](squIRC). Any design decisions that seem strange, ridiculous, idiotic, or even downright irresponsible in this repository are very likely my own.
   
 ## Installing ##
 (So far this has only been tested with Pharo 6.1)
