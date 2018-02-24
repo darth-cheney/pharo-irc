@@ -8,7 +8,13 @@ My reference version is the excellently designed [https://github.com/hpi-swa-tea
 ## Installing ##
 (So far this has only been tested with Pharo 6.1)
   
-Because I cannot, for the life of me, get `ConfigurationOfPharoIRC` to load properly via Metacello, you simply have to clone this branch in Iceberg and load in the packages one at a time.  Sorry!
+To easily install everything with Metacello:
+```smalltalk
+Metacello new
+    baseline: 'PharoIRC';
+    repository: 'github://darth-cheney/pharo-irc';
+    load.
+```
   
 ## Opening a Connection with the basic UI ##
 Here is an example of how to open a connection with the included basic gui.
