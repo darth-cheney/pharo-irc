@@ -5,7 +5,8 @@ processNextMessage: anIRCMessage
 	| handler |
 	anIRCMessage incoming: true.
 	msgLog add: anIRCMessage.
-	announcer announce: (IRCLogMessageAnnouncement new message: anIRCMessage).
+	globalLog ifTrue: [ 
+		 announcer announce: (IRCLogMessageAnnouncement new message: anIRCMessage)].
 	handler := self class incomingHandlers
 							at: (anIRCMessage command)
 							ifAbsent: [ nil ].

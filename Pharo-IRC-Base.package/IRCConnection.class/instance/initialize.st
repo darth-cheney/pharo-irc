@@ -10,7 +10,7 @@ initialize
 	
 	"Cache all messages the IRCMessageLogUtil
 	singleton log"
-	globalLog := true.
+	globalLog := false.
 	
 	"We set up outgoing in incoming message queues
 	that will be flushed with each listen loop"
