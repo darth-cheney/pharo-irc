@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "EricGade 4/25/2018 11:17",
+	"super" : "ZdcSecureSocketStream",
+	"category" : "Pharo-IRC-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "IRCSecureSocketStream",
+	"type" : "normal"
+}

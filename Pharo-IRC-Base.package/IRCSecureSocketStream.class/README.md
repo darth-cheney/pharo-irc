@@ -1,0 +1,1 @@
+I am a subclass of ZdcSecureSocket stream, which is an independent SocketStream implementation that allows TLS/SSL connections. I exist as a subclass because I implement some of the common messages available in SocketStream that are unavailable in ZdcSecureSocketStream.
