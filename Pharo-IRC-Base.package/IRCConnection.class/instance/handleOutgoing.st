@@ -8,7 +8,10 @@ handleOutgoing
 	sentMessages := OrderedCollection new.
 	outQueue do: [ :msg |
 		self connection isConnected ifTrue: [ 
-			self connection sendCommand: msg asString.
+			"self connection sendCommand: msg asString."
+			self connection
+				nextPutAll: ((msg asString), String crlf);
+				flush.
 			sentMessages add: msg.
 			announcer announce: (IRCMessageAnnouncement new message: msg) ] ].
 	

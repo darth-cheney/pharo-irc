@@ -34,4 +34,5 @@ setupIncomingHandlers
 		
 		"RPL_YOUREOPER"
 		'381' -> #processRplYoureOper:.
+
 		 } asDictionary.
