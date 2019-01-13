@@ -7,7 +7,7 @@ printConnectionQuit: anIRCMessage
 	anIRCMessage trailer ifNotNil: [ 
 		text := (text,' with message: ' asText,(anIRCMessage trailer asText)) ].
 	text := text,(String crlf) asText.
-	text allBold allItalic.
+	text addAttributes: {TextEmphasis bold. TextEmphasis italic}.
 	self addTextToLog: text.
 
 	

@@ -8,6 +8,6 @@ printTopicWho: anIRCMessage
 	text := (Character tab) asText.
 	text := text,'( ' asText,'Topic set by ' asText,nickname asText,' at ' asText,timestamp asText,') ' asText.
 	text := text,(String crlf) asText.
-	text allItalic.
+	text addAttribute: (TextEmphasis italic).
 	self addTextToLog: text.
 	
