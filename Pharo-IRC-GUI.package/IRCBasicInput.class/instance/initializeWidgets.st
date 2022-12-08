@@ -13,4 +13,4 @@ initializeWidgets
 	formatter := IRCBasicTextFormatter new.
 	cmdHandler := IRCTextCommandHandler new.
 	cmdHandler connection: self connection.
-	self input whenSubmitDo: [ :text | self handleInput: text ]
+	self input whenSubmitDo: [ :text | text ifNotEmpty: [ self handleInput: text ] ]

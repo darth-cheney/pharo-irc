@@ -1,7 +1,6 @@
 as yet unclassified
 handleJoinChannel: anAnnouncement
 	| newTab chanInput |
-	newTab := TabModel new.
 	chanInput := IRCBasicChannelInput new.
 	chanInput
 		addSubscriber: (anAnnouncement channel connection) on: #handleInputAnnouncement:;
@@ -18,10 +17,7 @@ handleJoinChannel: anAnnouncement
 		when: IRCQuitAnnouncement
 		send: #connectionQuit:
 		to: chanInput.
-	newTab
-		label: (anAnnouncement channel name);
-		contents: chanInput buildWithSpec.
-	self channelTabs addTab: newTab.
+	self channelTabs addPage: (SpNotebookPage title: (anAnnouncement channel name) provider: [ chanInput build ])..
 	newTab selected: true.
 	chanInput input textArea keyboardFocusChange: true.
 	
