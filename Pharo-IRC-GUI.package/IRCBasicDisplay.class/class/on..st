@@ -5,5 +5,5 @@ on: anIRCConnection
 	to connect"
 	| model |
 	model := self connection: anIRCConnection.
-	model openWithSpec.
+	model open.
 	model window whenClosedDo: [ model windowCloseAction ].

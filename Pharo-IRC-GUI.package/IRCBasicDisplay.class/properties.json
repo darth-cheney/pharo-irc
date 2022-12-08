@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "EricGade 2/23/2018 17:58",
-	"super" : "ComposableModel",
+	"super" : "SpPresenter",
 	"category" : "Pharo-IRC-GUI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
