@@ -12,7 +12,7 @@ To easily install everything with Metacello:
 ```smalltalk
 Metacello new
     baseline: 'PharoIRC';
-    repository: 'github://darth-cheney/pharo-irc';
+    repository: 'github://badetitou/pharo-irc';
     load.
 ```
   
@@ -26,7 +26,7 @@ connection
     nickname: 'pharo-user';
     hostname: 'irc.freenode.net'.
 display := IRCBasicDisplay connection: connection.
-display openWithSpec.
+display open.
 connection connect.
 ```
 ## IRCBasicDisplay commands ##
