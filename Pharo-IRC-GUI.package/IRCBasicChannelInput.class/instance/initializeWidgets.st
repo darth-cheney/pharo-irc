@@ -1,8 +1,8 @@
 initialization
 initializeWidgets
 	super initializeWidgets.
-	users := self instantiate: ListModel.
+	users := self newList.
 	users
-		displayBlock: [ :item |
+		display: [ :item |
 			item nickname ].
 	self commandHandler channel: self channel.

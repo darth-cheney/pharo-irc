@@ -10,4 +10,4 @@ connection: anIRCConnection
 		when: IRCJoinedChannelAnnouncement 
 		send: #handleJoinChannel:
 		to: inst.
-	^ inst openWithSpec.
+	^ inst open.
